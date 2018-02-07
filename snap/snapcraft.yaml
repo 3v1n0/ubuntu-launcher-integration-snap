@@ -1,0 +1,32 @@
+name: ubuntu-launcher-integration-snap
+version: '1.2.3'
+icon: snap/gui/icon.svg
+summary: Ubuntu launcher integration
+description: |
+  Testing Ubuntu launcher integration with no changes to the app
+
+grade: stable
+confinement: strict
+
+apps:
+  ubuntu-launcher:
+    command: ubuntu-launcher
+    plugs:
+      - unity7
+
+parts:
+  ubuntu-launcher:
+    build-packages:
+      - valac
+      - libunity-dev
+    plugin: nil
+    build: |
+      valac --pkg unity --pkg gtk+-3.0 ubuntu-launcher.vala
+    install: |
+      mkdir -p $SNAPCRAFT_PART_INSTALL/bin
+      mv -v ubuntu-launcher $SNAPCRAFT_PART_INSTALL/bin/
+
+  desktop-integration:
+    plugin: nil
+    stage-packages:
+      - libunity9

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Ubuntu Launcher Integration
+Comment=Ubuntu Launcher Integration
+Categories=GNOME;Utility;
+Exec=ubuntu-launcher-integration-snap.ubuntu-launcher
+Icon=${SNAP}/meta/gui/icon.svg
+Terminal=false
+Type=Application
+Version=0.4
