@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Ubuntu Launcher Integration (2nd desktop)
+Comment=Ubuntu Launcher Integration - second desktop file
+Categories=GNOME;Utility;
+Exec=ubuntu-launcher-integration-snap.ubuntu-launcher-2nd
+Icon=${SNAP}/meta/gui/icon.svg
+Terminal=false
+Type=Application
+Version=0.4

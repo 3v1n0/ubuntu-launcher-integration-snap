@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Ubuntu Launcher Integration (hardcoded snap desktop)
+Comment=Ubuntu Launcher Integration with hardcoded desktop
+Categories=GNOME;Utility;
+Exec=ubuntu-launcher-integration-snap.ubuntu-launcher-hardcoded
+Icon=${SNAP}/meta/gui/icon.svg
+Terminal=false
+Type=Application
+Version=0.4

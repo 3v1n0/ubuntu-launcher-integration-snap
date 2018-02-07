@@ -14,6 +14,16 @@ apps:
     plugs:
       - unity7
 
+  ubuntu-launcher-2nd:
+    command: ubuntu-launcher ubuntu-launcher-2nd.desktop
+    plugs:
+      - unity7
+
+  ubuntu-launcher-hardcoded:
+    command: ubuntu-launcher ubuntu-launcher-integration-snap_ubuntu-launcher-hardcoded.desktop
+    plugs:
+      - unity7
+
 parts:
   ubuntu-launcher:
     build-packages:
