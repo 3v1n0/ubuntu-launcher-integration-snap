@@ -28,6 +28,7 @@ parts:
   ubuntu-launcher:
     build-packages:
       - valac
+      - libgtk-3-dev
       - libunity-dev
     plugin: nil
     build: |
