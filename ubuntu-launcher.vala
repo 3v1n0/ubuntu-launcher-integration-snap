@@ -11,12 +11,12 @@ namespace UbuntuSnappedLauncher {
     /* Pretend to be evolution for the sake of the example */
     var l = Unity.LauncherEntry.get_for_desktop_id (desktop_id);
 
-    /* Show a count of 124 on the icon */
-    l.count = 124;
+    /* Show a count of random on the icon */
+    l.count = Random.int_range (35, 155);
     l.count_visible = true;
 
-    /* Set progress to 42% done */
-    l.progress = 0.42;
+    /* Set progress to random value% done */
+    l.progress = Random.double_range (0.1, 0.9);
     l.progress_visible = true;
 
     /* Set us as urgent. Quickly! Go! Go! Go! Now! Now! */
