@@ -1,11 +1,15 @@
 namespace UbuntuSnappedLauncher {
 
+  private const string DEFAULT_DESKTOP_ID = "ubuntu-launcher.desktop";
+
   public static void main (string[] args)
   {
     Gtk.init (ref args);
 
+    string desktop_id = args.length > 1 ? args[1] : DEFAULT_DESKTOP_ID;
+
     /* Pretend to be evolution for the sake of the example */
-    var l = Unity.LauncherEntry.get_for_desktop_id ("ubuntu-launcher.desktop");
+    var l = Unity.LauncherEntry.get_for_desktop_id (desktop_id);
 
     /* Show a count of 124 on the icon */
     l.count = 124;
